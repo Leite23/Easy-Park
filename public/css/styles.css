@@ -1,0 +1,83 @@
+@import url('./resources.css');
+
+.btn {
+    border-radius: 40px !important;
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-primary::selection,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: var(--main-color-darker);
+}
+
+.login-form-container {
+    min-width: 18rem !important;
+    max-width: 35vw !important;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 21px !important;
+    height: 7px !important;
+    padding: 16px !important;
+    outline: none;
+    font-size: small;
+}
+
+input:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: 0 0 2px 1px var(--main-color) !important;
+    outline: none !important;
+}
+
+.link {
+    color: var(--main-color);
+    font-size: small;
+}
+
+.link:hover {
+    color: var(--main-color-darker);
+    font-size: small;
+}
+
+.with-lines {
+    padding: 0;
+    margin: 0;
+}
+
+.with-lines::after,
+.with-lines::before {
+    content: '';
+    position: relative;
+    top: 6px;
+    margin: 5px;
+    width: 50px;
+    height: 1px;
+    background-color: #131113;
+}
+
+.container-parking-lot {
+    background: linear-gradient(180deg, #FFA800 8.9%, #FF8300 100%);
+    border-radius: 10px;
+}
+
+.search-bar>input {
+    all: unset;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: fit-content;
+}
